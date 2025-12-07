@@ -1,0 +1,13 @@
+HockeyModel UI PrototypeA high-fidelity, interactive front-end prototype for HockeyModel—an AI-powered hockey prediction platform.This application demonstrates the user experience for both Free and Premium users, featuring advanced data visualizations, confidence tracking, and market edge analysis.FeaturesDynamic Tier Toggling: Instantly switch between "Free" (blurred/locked data) and "Premium" (fully unlocked) views to simulate the upsell experience.Game Dashboard: Visual probability bars, confidence badges, and game schedules.Explainability Engine: Interactive "Waterfall Charts" showing how the model arrived at a specific win probability.Scenario Simulator: Interactive toggles (e.g., "Star Player Out") that adjust probabilities in real-time.Market Edge Finder: A dense data table comparing model probabilities against sportsbook odds to highlight +EV bets.Performance Tracking: SVG-based charts visualizing bankroll growth and ROI history.Weekly Contests: A gamified flow for users to submit their own predictions.Tech StackFramework: React 18 (via Vite)Styling: Tailwind CSSIcons: Lucide ReactRuntime: Node.jsPrerequisitesBefore running this project, ensure you have Node.js installed on your machine.Open your terminal (PowerShell, Command Prompt, or Terminal).Run node -v to check. If you get an error, download it from the official Node.js website.InstallationNavigate to the project directory:cd hockey-model-prototype
+Install the dependencies:npm install
+How to RunStart the development server:npm run dev
+Look for the "Local" URL in your terminal (usually http://localhost:5173/).Ctrl + Click the link or paste it into your browser to view the app.Project Structurehockey-model-prototype/
+├── src/
+│   ├── App.jsx           # Main application logic and all UI components
+│   ├── index.css         # Tailwind CSS directives and global styles
+│   └── main.jsx          # React entry point
+├── index.html            # HTML shell
+├── package.json          # Dependency list and scripts
+├── tailwind.config.js    # Tailwind configuration
+└── vite.config.js        # Build tool configuration
+Notes for DevelopersCSS Warnings: You may see a warning in VS Code saying "Unknown at rule @tailwind". This is normal and can be ignored; the app will still compile correctly.Mock Data: This prototype uses static mock data arrays (GAMES, PROPS, EDGE_FINDER) defined at the top of App.jsx. No backend connection is required.
