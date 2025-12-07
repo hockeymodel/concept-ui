@@ -904,7 +904,7 @@ const App = () => {
             This platform is for informational purposes only. Past performance does not guarantee future results. 
             All predictions are probability-based estimates.
         </p>
-        <p className="text-xs text-slate-700 mt-4">&copy; 2025 HockeyModel Analytics Inc.</p>
+        <p className="text-xs text-slate-700 mt-4">&copy; 2024 HockeyModel Analytics Inc.</p>
       </footer>
     </div>
   );
